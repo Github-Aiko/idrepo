@@ -29,4 +29,4 @@ jobs:
         file: ./backend/Dockerfile
         push: true
         platforms: linux/amd64
-        tags: aikocute/appleid_unblocker:latest
+        tags: aikocute/appleid_auto:latest

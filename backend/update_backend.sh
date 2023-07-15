@@ -30,7 +30,7 @@ if [ "$sync_time" = "" ]; then
     sync_time=15
 fi
 enable_auto_update=$([ "$auto_update" == "y" ] && echo True || echo False)
-docker run -d --name=appleauto --log-opt max-size=1m --log-opt max-file=2 --restart=always --network=host -e API_URL=$api_url -e API_KEY=$api_key -e SYNC_TIME=$sync_time -e AUTO_UPDATE=$enable_auto_update -e LANG=1 -v /var/run/docker.sock:/var/run/docker.sock sahuidhsu/appleauto_backend
+docker run -d --name=appleauto --log-opt max-size=1m --log-opt max-file=2 --restart=always --network=host -e API_URL=$api_url -e API_KEY=$api_key -e SYNC_TIME=$sync_time -e AUTO_UPDATE=$enable_auto_update -e LANG=1 -v /var/run/docker.sock:/var/run/docker.sock aikocute/appleid_auto
 echo "安装完成，容器已启动"
 echo "默认服务名：appleauto"
 echo "操作方法："
