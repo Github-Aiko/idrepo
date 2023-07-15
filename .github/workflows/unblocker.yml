@@ -2,6 +2,9 @@ name: Build:aikocute/appleid_unblocker:latest
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - backend
 
 jobs:
   build:
