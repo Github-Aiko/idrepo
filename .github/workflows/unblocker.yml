@@ -1,7 +1,6 @@
-name: Build:aikocute/appleid_unblocker:latest
+name: Build and Push Docker Image
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - backend
@@ -27,6 +26,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: ./backend/unblocker
-        file: Dockerfile
+        file: ./backend/unblocker/Dockerfile
         push: true
         tags: aikocute/appleid_unblocker:latest
