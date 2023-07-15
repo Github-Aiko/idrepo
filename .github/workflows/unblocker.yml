@@ -28,4 +28,5 @@ jobs:
         context: ./backend/unblocker
         file: ./backend/unblocker/Dockerfile
         push: true
+        platforms: linux/amd64,linux/arm64
         tags: aikocute/appleid_unblocker:latest
