@@ -13,11 +13,11 @@ from requests import post
 urllib3.disable_warnings()
 
 prefix = "apple-auto_"
-image_name = "sahuidhsu/appleid_auto:2.0"
+image_name = "aikocute/appleid_unblocker:latest"
 parser = argparse.ArgumentParser(description="")
 parser.add_argument("-api_url", help="API URL", required=True)
 parser.add_argument("-api_key", help="API key", required=True)
-parser.add_argument("-sync_time", help="同步时间间隔", default="10")
+parser.add_argument("-sync_time", help="同步时间间隔", default="30")
 parser.add_argument('-lang', help='Language', default='1')
 parser.add_argument("-auto_update", help="启用自动更新镜像", action='store_true')
 args = parser.parse_args()
