@@ -26,7 +26,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: ./backend/unblocker
+        context: /backend/unblocker
         file: ./Dockerfile
         push: true
         tags: aikocute/appleid_unblocker:latest
